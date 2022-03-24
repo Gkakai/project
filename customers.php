@@ -1,7 +1,6 @@
+
 <?php
 include "header.php";
-include "config.php";
-?>
 
 <div class="row m-2 p-2 ">
     <div class="col-4 ">
@@ -10,7 +9,7 @@ include "config.php";
     <div class="col-8">
         <!-- Button trigger modal -->
         <button type="button" class="m-1 btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Add Customer
+           Add Customers
         </button>
         <a href= "getreport.php" class="m-1 btn btn-danger float-end">Get Report</a>
         <!-- Modal -->
@@ -18,20 +17,20 @@ include "config.php";
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="text-center modal-title" id="exampleModalLabel">Add Customer</h5>
+                        <h5 class="text-center modal-title" id="exampleModalLabel">ADD STUDENT</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form action="" method="post">
                             <div class="row p-2">
                                 <div class="col-md-12">
-                                    <label class="form-label grey">First Name</label>
-                                    <input class="form-control" type="text" name="firstName" placeholder="">
+                                    <label class="form-label grey">firstName</label>
+                                    <input class="form-control" type="text" name="fistName" placeholder="">
                                 </div>
                             </div>
-                             <div class="row p-2">
+                            <div class="row p-2">
                                 <div class="col-md-12">
-                                    <label class="form-label grey">Second Name</label>
+                                    <label class="form-label grey">secondName</label>
                                     <input class="form-control" type="text" name="secondName" placeholder="">
                                 </div>
                             </div>
@@ -43,14 +42,13 @@ include "config.php";
                             </div>
                              <div class="row p-2">
                                 <div class="col-md-12">
-                                    <label class="form-label grey">Phone Number</label>
+                                    <label class="form-label grey">phoneNumber</label>
                                     <input class="form-control" type="text" name="phoneNumber">
                                 </div>
-                            </div>
-                           
-                         
-                                
-                            </div>
+                            </div>                        
+                              
+                          
+                          
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -64,7 +62,6 @@ include "config.php";
 </div>
 
 
-
 <?php
 include "Config.php";
 $sql = "SELECT * FROM `customer`";
@@ -76,18 +73,18 @@ if ($results){
           echo "<table class='table table-striped table-hover'>";
           echo "<tr>";
           echo "<td>#</td";
-          echo "<td>firstName</td";
+          echo "<td>fistName</td";
           echo "<td>secondName</td";
           echo "<td>emailAddress</td";
-          echo "<td>phoneNumber</td";
+          echo "<td>phoneNumber</td>"
+         
           echo "</tr>";
           while ($row =mysqli_fetch_array($results)) {
               echo "<tr>";
            
               echo "<td>" . $row['firstName'] . "</td>";
-              echo "<td>" . $row['secondName'] . "</td>";
               echo "<td>" . $row['emailAddress'] . "</td>";
-              echo "<td>" . $row['phoneNumber'] . "</td>";
+             
               echo "<td>
 
                     <a class='m-2' href='delete.php?id=".$row['ID']."'><span class='fa fa-trash'></span></a>

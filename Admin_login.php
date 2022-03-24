@@ -26,7 +26,7 @@
                     <div class="text-center">
                         <h4 class="">Welcome to Gkad Electroni Solution!</h4>
                     </div>
-                    <form action="Handlelogin.php" method="post">
+                    <form action="adm_dashboard.php" method="POST" enctype="multipart/form-data">
                         <div class="row mb-3">
                             <div>
                                 <input class="form-control rounded-pill" type="email" name="emailAddress" placeholder="Email Address">

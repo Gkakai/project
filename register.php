@@ -24,7 +24,7 @@
                     <div class="text-center">
                         <h4 class="grey">Create an Account</h4>
                     </div>
-                    <form action="Adminhandle_login.php" method="post">
+                    <form action="dashboard.php" method="post">
                         <div class="row mb-3">
                             <div class="col-sm-6">
                                 <input class="form-control rounded-pill" type="text" name="firstName" placeholder="First Name" required>

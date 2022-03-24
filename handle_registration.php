@@ -20,11 +20,11 @@ if (isset($_POST["register"])) {
         $storePass = password_hash($password, PASSWORD_DEFAULT);
     }
     if ($confirmPass != $password) {
-        $conPassErr = "Passwords do not Match!";
+        $conPassErr = "Password do not Match!";
         echo $confirmPass;
     }
     if (empty($passError) and empty($conPassErr)) {
-        $sql = "INSERT INTO `admin_table`('firstName`, `secondName`, `emailAddress`, `phoneNumber`, `gender`, `password`) 
+        $sql = "INSERT INTO `admin_table`('firstName`, `secondName`, `emailAddress`, `phoneNumber`, `gender`, `password`); 
         VALUES ('$firstName','$secondName','$emailAddress','$phoneNumber','$gender','$password',)";
 
 
@@ -38,3 +38,4 @@ if (isset($_POST["register"])) {
     }
     mysqli_close($link);
 }
+?>
