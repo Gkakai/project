@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/googlelogin/src" isTestSource="false" packagePrefix="Google\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/google/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/google/apiclient-services" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/paragonie/constant_time_encoding" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/googlelogin/vendor/ralouphie/getallheaders" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

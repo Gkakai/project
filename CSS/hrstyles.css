@@ -1,0 +1,30 @@
+
+
+.styleul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: darkblue;
+    overflow: hidden;
+}
+
+nav li{
+    float: left;
+
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    padding:16px 16px:
+    display:block:
+}
+nav li a:hover{
+    background-color: aqua;
+}
+
+.homepage{
+    background-color: Skyblue;
+}
+.homepage{
+    background-image: ;
+}
