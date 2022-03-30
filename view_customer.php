@@ -4,7 +4,7 @@
 session_start();
 
 if (!isset($_SESSION["loggedin"]) or  $_SESSION["loggedin"]!==true){
-    header("location:customer_login.php");
+    header("location:dashboard.php");
     exit();
 }
 
@@ -14,9 +14,9 @@ include "header.php";
 include  "config.php";
 
 
-if (isset($_GET["id"]) and !empty($_GET["id"])) {
+if (isset($_GET["ID"]) and !empty($_GET["ID"])) {
 
-    $id = $_GET["id"];
+    $id = $_GET["ID"];
 
     $sql = "SELECT * FROM `customer` WHERE ID=$ID";
 

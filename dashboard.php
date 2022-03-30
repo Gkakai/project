@@ -32,7 +32,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active " href="#hero">Home</a></li>
+                        <li><a class="nav-link active " href="#Home">Home</a></li>
                         <li><a class="nav-link active" href="#about">About</a></li>
                         <li><a class="nav-link active" href="#services">Services</a></li>
                         <li><a class="nav-link active " href="#products">Products</a></li>
@@ -67,6 +67,21 @@
 <br>
 <br>
 <main id="main">
+    <section id="Home" class="Home">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-50" src="images/products/3.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-50" src="images/products/hd.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-50" src="images/teams/repair.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
+    </section>
 
 
     <!-- ======= About Section ======= -->
@@ -180,15 +195,43 @@
     <!-- ======= Cta Section ======= -->
 
 
-    <!-- ======= Portfolio Section ======= -->
+    <!-- ======= Product  Section ======= -->
     <section id="Products" class="products">
         <div class="container">
 
             <div class="section-title">
                 <h2>Products</h2>
-                <p>Products tha we sell.</p>
+                <p>Products that we sell.</p>
             </div>
-
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="images/products/6.webp"  alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">HP<br>Core-i 5</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <a href="customer_login.php" class="btn btn-primary">Order</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top"src="images/products/5.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Lenevo</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+         <a href="customer_login.php" class="btn btn-primary">Order</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="images/products/2.png"  alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">HP <br> Core i3</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+         <a href="customer_login.php" class="btn btn-primary">Order</a>
+    </div>
+  </div>
+</div>
 
 
             <div class="row product-container">

@@ -17,11 +17,11 @@ include "header.php";
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="text-center modal-title" id="exampleModalLabel">ADD STUDENT</h5>
+                        <h5 class="text-center modal-title" id="exampleModalLabel">ADD CUSTOMER</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="" method="post">
+                        <form action="Add_customer.php" method="post">
                             <div class="row p-2">
                                 <div class="col-md-12">
                                     <label class="form-label grey">firstName</label>
@@ -47,13 +47,13 @@ include "header.php";
                                 </div>
                             </div>                        
                               
-                          
+                          <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <input type="submit" name="submit" class="col-6 btn btn-outline-danger" value="SUBMIT">
+                           </div>
+
                           
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <input type="submit" class="col-6 btn btn-outline-danger" value="SUBMIT">
                     </div>
                 </div>
             </div>
@@ -63,8 +63,8 @@ include "header.php";
 
 
 <?php
-include "Config.php";
-$sql = "SELECT * FROM `customer`";
+include "config.php";
+$sql = "SELECT * FROM `addcustomer`";
 $results = mysqli_query($link,$sql);
 
 if ($results){

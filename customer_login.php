@@ -27,7 +27,7 @@
                     <div class="text-center">
                         <h4 class="">Welcome to Gkad Electroni Solution!</h4>
                     </div>
-                    <form action="Handlelogin.php" method="post">
+                    <form action="dashboard.php" method="post">
                         <div class="row mb-3">
                             <div>
                                 <input class="form-control rounded-pill" type="email" name="emailAddress" placeholder="Email Address">
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <input type="submit" name="login" class= "rounded-pill btn btn-primary" href="dashboard.php" value="Login">
+                            <input type="submit" name="login" class= "rounded-pill btn btn-primary" href="add_order.php" value="Login">
                         </div>
                         <hr>
                         <div class="row mb-3">

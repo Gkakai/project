@@ -1,7 +1,8 @@
 <?php
-include "header.php";
+
+
 include "config.php";
-if (isset($_POST["SUBMIT"])) {
+if (isset($_POST["submit"])) {
 
     $fistName = $_POST["firstName"];
     $secondName = $_POST["secondName"];
@@ -13,8 +14,8 @@ if (isset($_POST["SUBMIT"])) {
 
 // insert
 
-    $sql = "INSERT INTO `customer`( `firstName`, `secondName`, `emailAddress`, `phoneNumber`) 
-VALUES ('$fistName','$secondName','$emailAddress','$phoneNumber')";
+    $sql = "INSERT INTO `addcustomer`(`firstName`, `secondName`, `emailAddress`, `phoneNumber`)
+     VALUES ('$firstName','$secondName','$emailAddress','$phoneNumber')";
 
 
     $results = mysqli_query($link, $sql);

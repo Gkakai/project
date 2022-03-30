@@ -1,5 +1,4 @@
-<?php
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +11,8 @@
     <script src="js/popper.min.js"></script>
     <script src="js/jquery.min.js"></script>
 </head>
+
+
 <body class="bg-primary">
 <div class="container p-4">
     <div class="card">
@@ -24,7 +25,7 @@
                     <div class="text-center">
                         <h4 class="grey">Create an Account</h4>
                     </div>
-                    <form action="dashboard.php" method="post">
+                    <form action="handle_admnreg.php" method="POST" enctype="multipart/form-data">
                         <div class="row mb-3">
                             <div class="col-sm-6">
                                 <input class="form-control rounded-pill" type="text" name="firstName" placeholder="First Name" required>
