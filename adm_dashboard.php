@@ -6,7 +6,7 @@ include "admn.php";
 <section>
     <div class="row m-2 p-2 ">
     <div class="col-4 ">
-        <p class="h3 grey"> Customers</p>
+        <p class="h3 grey"> CUSTOMERS</p>
     </div>
     <div class="col-8">
         <!-- Button trigger modal -->
@@ -23,7 +23,7 @@ include "admn.php";
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="" method="post">
+                        <form action="save_customer.php" method="POST" enctype="multipart/form-data">
                             <div class="row p-2">
                                 <div class="col-md-12">
                                     <label class="form-label grey">firstName</label>
@@ -61,7 +61,7 @@ include "admn.php";
             </div>
         </div>
     </div>
-</div>
+    </div>
 </section>
 
 
@@ -75,18 +75,19 @@ if ($results){
     if ($data>0){
           echo "<table class='table table-striped table-hover'>";
           echo "<tr>";
-          echo "<td>#</td";
           echo "<td>fistName</td";
           echo "<td>secondName</td";
           echo "<td>emailAddress</td";
-          echo "<td>phoneNumber</td>";
+     
          
           echo "</tr>";
           while ($row =mysqli_fetch_array($results)) {
               echo "<tr>";
            
               echo "<td>" . $row['firstName'] . "</td>";
-              echo "<td>" . $row['emailAddress'] . "</td>";
+              echo "<td>" . $row['secondName'] . "</td>";
+               echo "<td>" . $row['emailAddress'] . "</td>";
+
              
               echo "<td>
 

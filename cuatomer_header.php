@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>admin dashboard</title>
+    <title>customer dashboard</title>
     <link rel="stylesheet" href="css/dashstyle.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
                 <li class="nav-item stylenav ">
                     <a aria-current="page" class="nav-link active" href="#">
                         <i class="fa fa-chrome fa-3x text-white "></i>
-                        <span class="h4 text-white">GKaD ADMIN  </span>
+                        <span class="h4 text-white">GKaD Customer </span>
                     </a>
                 </li>
                 <hr>
@@ -39,22 +39,28 @@
                     </a>
                 </li>
                 <hr>
+                
                 <li class="nav-item stylenav">
-                    <a class="nav-link" href="customers.php">
-                        <i class="fa fa-users fa-lg text-white"></i>
-                        <span class="text-white">Customers</span>
-
-
-                    </a>
-                </li>
-                <li class="nav-item stylenav">
-                    <a class="nav-link" href="services.php">
+                    <a class="nav-link" href="#">
                         <i class="fa fa-clipboard fa-lg text-white"></i>
                         <span class="text-white">Services</span>
 
                     </a>
                 </li>
-               
+                <hr>
+                <li class="nav-item stylenav">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-file fa-lg text-white"></i>
+                        <span class="text-white">Orders</span>
+                    </a>
+                </li>
+                <li class="nav-item stylenav">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-line-chart fa-lg text-white"></i>
+                        <span class="text-white">Notifications</span>
+                    </a>
+                </li>
+                <hr>
                 <li class="nav-item stylenav">
                     <a class="nav-link" href="reset.php">
                         <i class="fa fa-cogs fa-lg text-white"></i>

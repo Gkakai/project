@@ -1,7 +1,7 @@
 <?php
 
 
-$link = mysqli_connect('localhost', 'root','', 'my_project');
+$link = new mysqli('localhost', 'root','', 'my_project');
 if (!$link)  {
 
    

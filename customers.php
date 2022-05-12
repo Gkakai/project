@@ -2,7 +2,17 @@
 <?php
 include "header.php";
 
-<div class="row m-2 p-2 ">
+
+?>
+
+<br>
+<br>
+<?php
+
+include "admn.php";
+?>
+
+<div class="row m-2 p-2">
     <div class="col-4 ">
         <p class="h3 grey"> Customers</p>
     </div>
@@ -21,11 +31,11 @@ include "header.php";
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="Add_customer.php" method="post">
+                        <form action="Add_customer.php" method="POST" enctype="multipart/form-data">
                             <div class="row p-2">
                                 <div class="col-md-12">
                                     <label class="form-label grey">firstName</label>
-                                    <input class="form-control" type="text" name="fistName" placeholder="">
+                                    <input class="form-control" type="text" name="firstName" placeholder="">
                                 </div>
                             </div>
                             <div class="row p-2">
@@ -45,7 +55,13 @@ include "header.php";
                                     <label class="form-label grey">phoneNumber</label>
                                     <input class="form-control" type="text" name="phoneNumber">
                                 </div>
-                            </div>                        
+                            </div> 
+                            <div class="row p-2">
+                                <div class="col-md-12">
+                                    <label class="form-label grey">Password</label>
+                                    <input class="form-control" type="password" name="password">
+                                </div>
+                            </div>                       
                               
                           <div class="modal-footer">
                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -61,43 +77,39 @@ include "header.php";
     </div>
 </div>
 
-
 <?php
 include "config.php";
-$sql = "SELECT * FROM `addcustomer`";
+$sql = "SELECT * FROM `customer`";
 $results = mysqli_query($link,$sql);
 
 if ($results){
     $data =mysqli_num_rows($results);
     if ($data>0){
-          echo "<table class='table table-striped table-hover'>";
-          echo "<tr>";
-          echo "<td>#</td";
-          echo "<td>fistName</td";
-          echo "<td>secondName</td";
-          echo "<td>emailAddress</td";
-          echo "<td>phoneNumber</td>"
+        echo "<table class='table table-striped table-hover'>
+          <tr>
          
-          echo "</tr>";
+          <th>First Name</th>
+          <th>Second Name</th>
+          <th>Email Address</th>
+          <th>Phone Number</th>
+          
+         
+          </tr>";
           while ($row =mysqli_fetch_array($results)) {
               echo "<tr>";
            
               echo "<td>" . $row['firstName'] . "</td>";
+              echo "<td>" . $row['secondName'] . "</td>";
               echo "<td>" . $row['emailAddress'] . "</td>";
+              echo "<td>" . $row['phoneNumber'] . "</td>";
              
-              echo "<td>
-
-                    <a class='m-2' href='delete.php?id=".$row['ID']."'><span class='fa fa-trash'></span></a>
-                    <a class='m-2' href='update.php?id=".$row['ID']."'><span class='fa fa-pencil'></span></a>
-                    <a class='m-2' href='view.php?id=".$row['ID']."'><span class='fa fa-eye'></span></a>
-
-                   </td>";
-              echo "</tr>";
+             
+            echo "</tr>";
 
           }
+          echo "</table>";
     }else{
         echo "<p class = 'alert alert-primary'>No Record found in the database</p>";
     }
 }
-
 ?>

@@ -36,7 +36,7 @@ if (isset($_POST["submit"]) and !Empty($_POST["ID"])) {
     <form action="delete.php" method="post">
         <div>
             <label> Are you sure to delete this record?</label><br>
-            <input type="text" name="ID" value="<?php echo $_GET["ID"];?>">
+           
         </div>
         <div>
             <input type="SUBMIT" name="SUBMIT" value="YES">

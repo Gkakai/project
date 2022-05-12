@@ -1,87 +1,46 @@
 <?php
+include "header.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Dashboad</title>
-    <link rel="stylesheet" href="CSS/dashstyles.css">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-</head>
-
-<body>
-<header id="header" class="fixed-top d-flex align-items-center bg-primary ">
-    <div class="container d-flex bg-primary">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="images/comp1.jpg" alt="" width="100" height="80" class="d-inline-block align-text-top">
-                </a>
-                <a class="navbar-brand" href="#">
-                    <br>GKaD Electronics <br>Solutions
-                </a>
-            </div>
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li><a class="nav-link active " href="#Home">Home</a></li>
-                        <li><a class="nav-link active" href="#about">About</a></li>
-                        <li><a class="nav-link active" href="#services">Services</a></li>
-                        <li><a class="nav-link active " href="#products">Products</a></li>
-                        <li><a class="nav-link active" href="#team">Team</a></li>
-                        <li><a class="nav-link active" href="#contact">Contact</a></li>
-                        <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle float-end" href="#" id="navbarDropdownMenuLink"  role="button"  data-bs-toggle="dropdown" aria-expanded="false" >
-                                Log in
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="Admin_login.php">Admin</a></li>
-                                <li><a class="dropdown-item" href="customer_login.php">Customer</a></li>
-                            </ul>
-                        </li>
-
-
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-        </nav><!-- .navbar -->
-    </div>
-</header>
 
 <br>
 <br>
 <br>
 <br>
 <br>
+<br><br><br>
+
 <main id="main">
-    <section id="Home" class="Home">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-50" src="images/products/3.png" alt="First slide">
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  
+
+    <div class="item">
+      <img src="images/Gkad.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-50" src="images/products/hd.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-50" src="images/teams/repair.jpg" alt="Third slide">
-    </div>
-  </div>
+
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-    </section>
 
 
     <!-- ======= About Section ======= -->
@@ -153,7 +112,7 @@
         <div class="container">
 
             <div class="section-title m-3">
-                <center>  <h4>Services</h4> </center>
+                <center class="btn-primary">  <h2>Services</h2> </center>
 
             </div>
 
@@ -162,7 +121,9 @@
                     <div class="icon-box">
                         <i class="bi bi-briefcase"></i>
                         <h4><a href="#">Repair Services</a></h4>
-                        <p>we do repair services of all machines</p>
+                        <p>We do repair services of all machines</p>
+                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                         <a href="customer_login.php" class="btn btn-primary">Service request</a>
                     </div>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0">
@@ -170,6 +131,8 @@
                         <i class="bi bi-card-checklist"></i>
                         <h4><a href="#">Hardware trableshooting</a></h4>
                         <p> we make sure your hardware is well working</p>
+                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                         <a href="customer_login.php" class="btn btn-primary">Service request</a>
                     </div>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0">
@@ -177,6 +140,8 @@
                         <i class="bi bi-bar-chart"></i>
                         <h4><a href="#">Software Instalation</a></h4>
                         <p>We install softawares at an affortable prices</p>
+                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                         <a href="customer_login.php" class="btn btn-primary">Service request</a>
                     </div>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0">
@@ -184,6 +149,8 @@
                         <i class="bi bi-binoculars"></i>
                         <h4><a href="#">Sales</a></h4>
                         <p>We sale bath New and refurbished Labtops and CPU</p>
+                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                         <a href="customer_login.php" class="btn btn-primary">Service request</a>
                     </div>
                 </div>
 
@@ -192,7 +159,9 @@
         </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Cta Section ======= -->
+ <br>
+  <br>
+   <br>
 
 
     <!-- ======= Product  Section ======= -->
@@ -207,8 +176,8 @@
   <div class="card">
     <img class="card-img-top" src="images/products/6.webp"  alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">HP<br>Core-i 5</p>
+      <h5 class="card-title bg-info" >HP PAVILION </h5>
+      <p class="card-text">>> HP<br>>> Core-i 5 <br>>> Win 11 </p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       <a href="customer_login.php" class="btn btn-primary">Order</a>
     </div>
@@ -216,7 +185,7 @@
   <div class="card">
     <img class="card-img-top"src="images/products/5.png" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">DELL</h5>
       <p class="card-text">Lenevo</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
          <a href="customer_login.php" class="btn btn-primary">Order</a>
@@ -225,7 +194,7 @@
   <div class="card">
     <img class="card-img-top" src="images/products/2.png"  alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">LENOVO (ThinkPad)</h5>
       <p class="card-text">HP <br> Core i3</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
          <a href="customer_login.php" class="btn btn-primary">Order</a>
@@ -234,65 +203,20 @@
 </div>
 
 
-            <div class="row product-container">
+          
+    </section>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <img src="images/products/2.png" class="img-fluid" alt="">
-
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <img src="images/products/3.png" class="img-fluid" alt="">
-
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <img src="images/products/5.png" class="img-fluid" alt="">
-
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <img src="images/products/hd.jpg" class="img-fluid" alt="">
-
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <img src="images/products/matherboard.jpg" class="img-fluid" alt="">
-
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <img src="images/products/ram.jpg" class="img-fluid" alt="">
-
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <img src="images/products/4.webp" class="img-fluid" alt="">
-
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <img src="images/products/6.webp" class="img-fluid" alt="">
-
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <img src="images/products/pws.jpg" class="img-fluid" alt="">
-
-                </div>
-
-            </div>
-
-        </div>
-    </section><!-- End Portfolio Section -->
+ <br>
+  <br>
+   <br>
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
         <div class="container">
 
             <div class="section-title">
-                <center>
-                    <h4>Team</h4>
+                <center class="bg-primary ">
+                    <h2>Team</h2>
                 </center>
 
                 <p>This is our able team that is resposnsiple for your work</p>
@@ -357,6 +281,10 @@
         </div>
     </section><!-- End Team Section -->
 
+ <br>
+  <br>
+   <br>
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact bg-info section-bg">
         <div class="container bg-info">
@@ -400,7 +328,7 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <form action="contact.php" method="post" role="form" class="php-email-form">
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -492,12 +420,14 @@
             </div>
         </div>
     </div>
+    
     <br><br>
-    <div class="container bg-warning">
+    <div class="container bg-">
         <div class="">
-            <div class="copyright ">
-               <center &copy; Copyright <strong><span>GKaD</span></strong>. All Rights Reserved <center>
-            </div>
+        
+
+              <div class="copyright"> © Copyright <strong><span>GKaD</span></strong>. All Rights Reserved</div>
+           
         </div>
     </div>
 </footer>

@@ -49,9 +49,7 @@
                     <div class="text-center">
                         <a class="small" href="">Forgot password?</a>
                     </div>
-                    <div class="text-center">
-                        <a class="small" href="register.php">Create an Acount</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>

@@ -2,20 +2,20 @@
 
 
 include "config.php";
-if (isset($_POST["submit"])) {
+if ($_SERVER['REQUEST_METHOD']=="POST") {
 
-    $fistName = $_POST["firstName"];
-    $secondName = $_POST["secondName"];
-    $emailAddress = $_POST["emailAddress"];
-    $phoneNumber = $_POST["phoneNumber"];
+    $firstName = $_REQUEST["firstName"];
+    $secondName = $_REQUEST["secondName"];
+    $emailAddress = $_REQUEST["emailAddress"];
+    $phoneNumber = $_REQUEST["phoneNumber"];
+    $password = $_REQUEST["password"];
 
 
 
 
 // insert
 
-    $sql = "INSERT INTO `addcustomer`(`firstName`, `secondName`, `emailAddress`, `phoneNumber`)
-     VALUES ('$firstName','$secondName','$emailAddress','$phoneNumber')";
+    $sql = "INSERT INTO `customer`(`firstName`, `secondName`, `emailAddress`, `phoneNumber`, `password`) VALUES ('$firstName','$secondName','$emailAddress','$phoneNumber','$password')";
 
 
     $results = mysqli_query($link, $sql);

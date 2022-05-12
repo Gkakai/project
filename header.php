@@ -42,7 +42,7 @@
                                 Log in
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="customer_login.php">Admin</a></li>
+                                <li><a class="dropdown-item" href="Admin_login.php">Admin</a></li>
                                 <li><a class="dropdown-item" href="customer_login.php">Customer</a></li>
                             </ul>
                         </li>

@@ -1,6 +1,6 @@
 <?php
+session_start();
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,9 +25,13 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="text-center">
-                        <h4 class="">Welcome to Gkad Electroni Solution!</h4>
+
+                        <?php  if (isset($_GET['error'])){ ?>
+                           <p style="color:red;"><?php echo $_GET['error']; ?></p>
+                       <?php } ?>
+                        <h4 class="">Welcome to Gkad Electronics Solution!</h4>
                     </div>
-                    <form action="dashboard.php" method="post">
+                    <form action="customer_verification.php" method="post" enctype="multipart/form-data">
                         <div class="row mb-3">
                             <div>
                                 <input class="form-control rounded-pill" type="email" name="emailAddress" placeholder="Email Address">
@@ -51,7 +55,7 @@
                         <a class="small" href="">Forgot password?</a>
                     </div>
                     <div class="text-center">
-                        <a class="small" href="register.php">Create an Acount</a>
+                        <a class="small" href="customer_reg.php">Create an Acount</a>
                     </div>
                 </div>
             </div>
